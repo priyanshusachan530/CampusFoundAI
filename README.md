@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 CampusFoundAI
+# 🎓 CampusFoundAI (CampusLinkAI)
 
 **Intelligent Lost & Found Platform for University Campuses**  
 Automated multi-attribute matching, anti-fraud ownership verification, real-time Firebase cloud synchronization, and security custody tracking.
@@ -14,7 +14,7 @@ Automated multi-attribute matching, anti-fraud ownership verification, real-time
 <br /><br />
 
 [![Live URL](https://img.shields.io/badge/Live%20URL-campus--found--ai.vercel.app-0070F3?style=flat-square&logo=vercel&logoColor=white)](https://campus-found-ai.vercel.app)
-[![Firebase](https://img.shields.io/badge/%20Database-Firebase%20Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://campusfoundai.firebaseapp.com)
+[![Firebase](https://img.shields.io/badge/Cloud%20Database-Firebase%20Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://campusfoundai.firebaseapp.com)
 [![React 19](https://img.shields.io/badge/Frontend-React%2019-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
