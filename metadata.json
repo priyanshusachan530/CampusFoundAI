@@ -1,0 +1,6 @@
+{
+  "name": "CampusLinkAI",
+  "description": "CampusLinkAI - Intelligent Lost & Found Platform for university campuses. Automated multi-attribute matching, anti-fraud ownership verification, and security custody tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

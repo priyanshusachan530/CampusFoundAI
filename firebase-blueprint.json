@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "Item": {
+      "title": "Item",
+      "description": "Lost or found item report on campus",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "description": { "type": "string", "maxLength": 2000 },
+        "type": { "type": "string", "enum": ["lost", "found"] },
+        "category": { "type": "string", "maxLength": 100 },
+        "location": { "type": "string", "maxLength": 150 },
+        "date": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "enum": ["ACTIVE", "CLAIMED", "RESOLVED", "pending", "claimed", "resolved"] },
+        "userId": { "type": "string", "maxLength": 128 },
+        "reporterName": { "type": "string", "maxLength": 100 },
+        "reporterEmail": { "type": "string", "maxLength": 150 },
+        "createdAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["title", "type", "category", "location"]
+    },
+    "Claim": {
+      "title": "Claim",
+      "description": "Ownership verification claim for a found item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "itemId": { "type": "string", "maxLength": 128 },
+        "claimantId": { "type": "string", "maxLength": 128 },
+        "claimantName": { "type": "string", "maxLength": 100 },
+        "claimantEmail": { "type": "string", "maxLength": 150 },
+        "proofDetails": { "type": "string", "maxLength": 2000 },
+        "status": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["itemId", "claimantName", "claimantEmail"]
+    },
+    "Match": {
+      "title": "Match",
+      "description": "AI-computed match pairing between a lost report and found item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "lostItemId": { "type": "string", "maxLength": 128 },
+        "foundItemId": { "type": "string", "maxLength": 128 },
+        "score": { "type": "number" },
+        "matchLevel": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["lostItemId", "foundItemId", "score"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Campus user profile and credentials",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 150 },
+        "role": { "type": "string", "enum": ["Student", "Faculty", "Security Staff", "Administrator"] }
+      },
+      "required": ["name", "email", "role"]
+    }
+  },
+  "firestore": {
+    "/items/{itemId}": {
+      "schema": { "$ref": "#/entities/Item" },
+      "description": "Public and user reported lost and found catalog"
+    },
+    "/claims/{claimId}": {
+      "schema": { "$ref": "#/entities/Claim" },
+      "description": "Submitted ownership claims"
+    },
+    "/matches/{matchId}": {
+      "schema": { "$ref": "#/entities/Match" },
+      "description": "Item correlation matches"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Registered student and faculty user profiles"
+    }
+  }
+}

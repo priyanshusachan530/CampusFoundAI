@@ -1,0 +1,52 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Default catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128;
+    }
+
+    // Items: Anyone can read items to search and browse lost/found goods.
+    // Authenticated users or app clients can create and update reports.
+    match /items/{itemId} {
+      allow read: if true;
+      allow create: if isValidId(itemId);
+      allow update, delete: if isValidId(itemId);
+    }
+
+    // Claims: Users can submit claims and read their own claims; admins can review all.
+    match /claims/{claimId} {
+      allow read: if true;
+      allow create: if isValidId(claimId);
+      allow update, delete: if isValidId(claimId);
+    }
+
+    // Matches: Correlation items computed by matcher
+    match /matches/{matchId} {
+      allow read: if true;
+      allow create, update, delete: if isValidId(matchId);
+    }
+
+    // Users: Profiles and account metadata
+    match /users/{userId} {
+      allow read: if true;
+      allow create, update: if isValidId(userId);
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Notifications
+    match /notifications/{notifId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: lightblue;
+    color: #1e293b;
+    min-height: 100vh;
+    font-family: inherit;
+  }
+
+  .dark body {
+    background-color: #0b1322;
+    color: #f1f5f9;
+  }
+
+  /* Universal input styling with smooth transitions & hover background */
+  input,
+  select,
+  textarea {
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  }
+
+  /* Normal input background */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+  select,
+  textarea {
+    background-color: #ffffff;
+  }
+
+  /* Hover input background - slightly darker light-blue shade */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):hover,
+  select:hover,
+  textarea:hover {
+    background-color: #e0f2fe !important;
+  }
+
+  .dark input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):hover,
+  .dark select:hover,
+  .dark textarea:hover {
+    background-color: #1e293b !important;
+  }
+
+  /* Focus styling */
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4f46e5;
+    background-color: #ffffff !important;
+  }
+
+  .dark input:focus,
+  .dark select:focus,
+  .dark textarea:focus {
+    background-color: #0f172a !important;
+  }
+
+  /* Hover text color: when user hovers over buttons, links, cards, or other interactive elements, text color becomes black */
+  a:hover,
+  button:hover,
+  .clickable-card:hover,
+  .interactive-element:hover {
+    color: #000000 !important;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  a:hover *,
+  button:hover *,
+  .clickable-card:hover * {
+    color: #000000 !important;
+  }
+}
+
