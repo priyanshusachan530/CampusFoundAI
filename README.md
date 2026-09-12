@@ -1,7 +1,26 @@
-# CampusLinkAI (CampusFoundAI)
+<div align="center">
 
-> **Intelligent Lost & Found Platform for University Campuses**  
-> Automated multi-attribute matching, anti-fraud ownership verification, real-time Firebase cloud synchronization, and security custody tracking.
+# 🎓 CampusFoundAI
+
+**Intelligent Lost & Found Platform for University Campuses**  
+Automated multi-attribute matching, anti-fraud ownership verification, real-time Firebase cloud synchronization, and security custody tracking.
+
+<br />
+
+<a href="https://campus-found-ai.vercel.app" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-VISIT%20CAMPUSFOUNDAI-0070F3?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000" alt="Visit CampusFoundAI Live Demo" height="54" />
+</a>
+
+<br /><br />
+
+[![Live URL](https://img.shields.io/badge/Live%20URL-campus--found--ai.vercel.app-0070F3?style=flat-square&logo=vercel&logoColor=white)](https://campus-found-ai.vercel.app)
+[![Firebase](https://img.shields.io/badge/Cloud%20Database-Firebase%20Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://campusfoundai.firebaseapp.com)
+[![React 19](https://img.shields.io/badge/Frontend-React%2019-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+
+**🌐 Live Application:** [https://campus-found-ai.vercel.app](https://campus-found-ai.vercel.app)
+
+</div>
 
 ---
 
@@ -85,7 +104,7 @@ In your **Vercel Dashboard > Project Settings > Environment Variables**, add you
 | `VITE_ADMIN_EMAIL` | Admin Email (Optional) | `admin@university.edu` |
 
 > **Important for Google Sign-In on Vercel**:  
-> In your [Firebase Console](https://console.firebase.google.com/) under **Authentication > Settings > Authorized domains**, add your Vercel domain (e.g., `your-project.vercel.app`) so Google Sign-In popup works seamlessly.
+> In your [Firebase Console](https://console.firebase.google.com/) under **Authentication > Settings > Authorized domains**, add `campus-found-ai.vercel.app` so Google Sign-In popup works seamlessly.
 
 ---
 
