@@ -139,7 +139,3 @@ service cloud.firestore {
 }
 ```
 
----
-
-## License
-MIT License. Built for University & Campus Communities.
