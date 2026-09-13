@@ -7,18 +7,18 @@ Automated multi-attribute matching, anti-fraud ownership verification, real-time
 
 <br />
 
-<a href="https://campus-found-ai.vercel.app" target="_blank" rel="noopener noreferrer">
+<a href="https://campus-link-ai.vercel.app" target="_blank" rel="noopener noreferrer">
   <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-VISIT%20CAMPUSFOUNDAI-0070F3?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000" alt="Visit CampusFoundAI Live Demo" height="54" />
 </a>
 
 <br /><br />
 
 [![Live URL](https://img.shields.io/badge/Live%20URL-campus--found--ai.vercel.app-0070F3?style=flat-square&logo=vercel&logoColor=white)](https://campus-found-ai.vercel.app)
-[![Firebase](https://img.shields.io/badge/Cloud%20Database-Firebase%20Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://campusfoundai.firebaseapp.com)
+[![Firebase](https://img.shields.io/badge/Cloud%20Database-Firebase%20Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://campuslinkai.firebaseapp.com)
 [![React 19](https://img.shields.io/badge/Frontend-React%2019-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
-**🌐 Live Application:** [https://campus-found-ai.vercel.app](https://campus-found-ai.vercel.app)
+**🌐 Live Application:** [https://campus-link-ai.vercel.app](https://campus-found-ai.vercel.app)
 
 </div>
 
