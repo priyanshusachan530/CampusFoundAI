@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 (CampusLinkAI
+# 🎓 CampusLinkAI
 
 **Intelligent Lost & Found Platform for University Campuses**  
 Automated multi-attribute matching, anti-fraud ownership verification, real-time Firebase cloud synchronization, and security custody tracking.
